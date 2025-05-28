@@ -2,16 +2,16 @@ Dumping here things I've learnt hacking on [newm](https://github.com/newm-next/n
 
 # Jupyter
 
-I'm starting newm inside a Jupyter notebook, so I can connect to it and interact with Python state live: [NEWM.ipynb]()  A bit crazy ;-), but I learnt a lot about Jupyter internals, moving parts, and how to put them together in weird ways, which is maybe useful to others...
+I'm starting newm inside a Jupyter notebook, so I can connect to it and interact with Python state live: [NEWM.ipynb](NEWM.ipynb)  A bit crazy ;-), but I learnt a lot about Jupyter internals, moving parts, and how to put them together in weird ways, which is maybe useful to others...
 
 WHY did I go for jupyter?
    - [x] Supports disconnect/reconnect
    - [x] Records outputs while disconnected, in a standard format.
    - Fancy rich outputs.
 
-[HANDOFF.ipynb]() is good intro to Jupyter architecture in terms of what happens during long-running cell execution and disconnect/reconnect.
+[HANDOFF.ipynb](HANDOFF.ipynb) is good intro to Jupyter architecture in terms of what happens during long-running cell execution and disconnect/reconnect.
 
-See [KERNELS.ipynb] for how to enumerate servers / "sessions" / kernels, how they relate, kernel lifecycle + code to draw mermaid diagrams of all these.
+See [KERNELS.ipynb](KERNELS.ipynb) for how to enumerate servers / "sessions" / kernels, how they relate, kernel lifecycle + code to draw mermaid diagrams of all these.
 
 Ideal workflow involves starting notebook *before* I have a graphical environment, and connecting from browser — which itself is running under newm!  And, I want messages from startup to be captured in the notebook.
 
@@ -36,7 +36,9 @@ Ideal workflow involves starting notebook *before* I have a graphical environmen
    * open notebook with existing kernel.
      * What happens when you change kernel on existing notebook?
 
-TODO write 'BACKGROUND.ipynb' about bg execution & threads & output.
+TODO write 'BACKGROUND.ipynb' about bg execution & threads & output...
+
+TODO sprinkle `uvx` commands for semi-reproducible running...
 
 # TODO architecture of pywm <-> wlr C layer
 
